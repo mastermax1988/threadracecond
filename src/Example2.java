@@ -6,4 +6,5 @@ public class Example2 {
     public int increment() {
         return ++count;
     }
+
 }

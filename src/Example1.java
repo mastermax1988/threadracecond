@@ -1,6 +1,6 @@
 
 public class Example1 {
-    private boolean flag;
+    private volatile boolean flag;
     public void setTrue() {
         flag = true;
         if(!flag) {

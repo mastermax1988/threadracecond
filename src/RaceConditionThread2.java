@@ -6,7 +6,7 @@ public class RaceConditionThread2 extends Thread
     }
     public void run() {
         while (true) {
-            System.out.println(example.increment());
+            System.out.println(example.increment() + " " + currentThread().getId());
         }
     }
 }
