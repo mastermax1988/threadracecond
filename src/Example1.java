@@ -1,13 +1,13 @@
 
 public class Example1 {
-    private volatile boolean flag;
-    public synchronized void setTrue() {
+    private boolean flag;
+    public void setTrue() {
         flag = true;
         if(!flag) {
             System.out.println("Race Condition");
         }
     }
-    public synchronized void setFalse()
+    public void setFalse()
     {
         flag = false;
         if (flag)
